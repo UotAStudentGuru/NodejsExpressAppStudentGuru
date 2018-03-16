@@ -41,25 +41,27 @@
 
 
     $('.validate-form').on('submit',function(){
-        var check = true;
+        //var check = true;
 
-        if($(name).val().trim() == ''){
-            showValidate(name);
-            check=false;
-        }
+        //if($(name).val().trim() == ''){
+        //    showValidate(name);
+        //    check=false;
+        //}
 
 
-        if($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
-            showValidate(email);
-            check=false;
-        }
+        //if($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+        //    showValidate(email);
+        //    check=false;
+        //}
 
-        if($(message).val().trim() == ''){
-            showValidate(message);
-            check=false;
-        }
+        //if($(message).val().trim() == ''){
+        //    showValidate(message);
+        //    check=false;
+        //}
 
-        return check;
+        //return check;
+
+        window.location.replace("/list");
     });
 
 

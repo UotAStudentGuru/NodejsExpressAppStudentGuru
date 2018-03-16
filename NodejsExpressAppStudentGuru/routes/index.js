@@ -12,16 +12,16 @@ router.get('/', function (req, res)
     //var expenseModel = mongoose.model('expense', expense);
 
     // Create an instance of model SomeModel
-    var awesome_instance = new expense({ type: 'Bills', ammount: 3, message: "Koinoxrista" });
+    //var awesome_instance = new expense({ type: res.body.type, ammount: res.body.ammount, message: res.body.message });
 
-    // Save the new model instance, passing a callback
-    awesome_instance.save(function (err) {
-        if (err)
-        {
-            return handleError(err);            
-        }
-        // saved!
-    });
+    //// Save the new model instance, passing a callback
+    //awesome_instance.save(function (err) {
+    //    if (err)
+    //    {
+    //        return handleError(err);            
+    //    }
+    //    // saved!
+    //});
 });
 
 module.exports = router;
