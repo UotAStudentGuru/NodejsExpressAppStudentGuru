@@ -45,7 +45,7 @@ router.post('/', function (req, res)
     //});
 
     console.log(req.body);
-    var expense_instance = new expense({ type: req.body.type, ammount: req.body.ammount, message: req.body.message });
+    var expense_instance = new expense({ type: req.body.type, ammount: req.body.ammount, message: req.body.message, date: new Date().toDateString() });
     // Save the new model instance, passing a callback
     expense_instance.save(function (err) {
         if (err) {

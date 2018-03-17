@@ -7,7 +7,8 @@ var Schema = mongoose.Schema;
 var expense = new Schema({
     type: String,
     ammount: Number,
-    message: String
+    message: String,
+    date: String
 });
 
 module.exports = mongoose.model('expense', expense);
